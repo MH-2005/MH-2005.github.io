@@ -176,6 +176,18 @@
     </footer>
 
     <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('theme') || 'theme-dark';
+        var lang = localStorage.getItem('language') || 'fa';
+        document.documentElement.lang = lang;
+        document.documentElement.dir = (lang === 'fa') ? 'rtl' : 'ltr';
+        document.body.className = theme + ' bg-primary text-primary';
+      } catch(e) {}
+    })();
+    </script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
     document.addEventListener('DOMContentLoaded', () => {
         // --- ELEMENTS ---
         const body = document.body;
