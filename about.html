@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>درباره من | محمدرضا حسن‌زاده</title>
+    <meta name="description" content="آشنایی بیشتر با محمدرضا حسن‌زاده، پیشینه، علایق و مهارت‌های کلیدی او در زمینه‌های برنامه‌نویسی، هوش مصنوعی و رباتیک.">
+    <meta name="keywords" content="درباره محمدرضا حسن‌زاده, بیوگرافی, مهارت‌ها, C++, Python, Java, هوش مصنوعی, تحلیل داده, NLP, رباتیک">
+    <meta name="author" content="محمدرضا حسن‌زاده کردآبادی">
+    <link rel="canonical" href="https://mr-hk.ir/about.html">
+
+    <!-- Open Graph / Facebook / LinkedIn / Telegram -->
+    <meta property="og:title" content="درباره من | محمدرضا حسن‌زاده">
+    <meta property="og:description" content="آشنایی بیشتر با محمدرضا حسن‌زاده، پیشینه، علایق و مهارت‌های کلیدی او.">
+    <meta property="og:image" content="https://mr-hk.ir/assets/og-image.jpg"> <!-- Important: Replace with your actual image URL -->
+    <meta property="og:url" content="https://mr-hk.ir/about.html">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="fa_IR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="درباره من | محمدرضا حسن‌زاده">
+    <meta name="twitter:description" content="آشنایی بیشتر با محمدرضا حسن‌زاده، پیشینه، علایق و مهارت‌های کلیدی او.">
+    <meta name="twitter:image" content="https://mr-hk.ir/assets/og-image.jpg"> <!-- Important: Replace with your actual image URL -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Vazirmatn for Persian, Inter for English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles and Theme Variables -->
+    <style>
+        :root {
+            --font-fa: 'Vazirmatn', sans-serif;
+            --font-en: 'Inter', sans-serif;
+        }
+        html { scroll-behavior: smooth; }
+        body { transition: background-color 0.3s ease, color 0.3s ease; }
+        html[lang="fa"] body { font-family: var(--font-fa); }
+        html[lang="en"] body { font-family: var(--font-en); }
+
+        .theme-dark {
+            --bg-primary: #111827; --bg-secondary: #1f2937; --bg-tertiary: #374151;
+            --text-primary: #f9fafb; --text-secondary: #d1d5db; --accent-color: #3b82f6;
+            --accent-hover: #2563eb; --border-color: #4b5563;
+        }
+        .theme-light {
+            --bg-primary: #ffffff; --bg-secondary: #f3f4f6; --bg-tertiary: #e5e7eb;
+            --text-primary: #111827; --text-secondary: #4b5563; --accent-color: #3b82f6;
+            --accent-hover: #2563eb; --border-color: #d1d5db;
+        }
+        .theme-code {
+            --bg-primary: #1e1e1e; --bg-secondary: #252526; --bg-tertiary: #333333;
+            --text-primary: #d4d4d4; --text-secondary: #a0a0a0; --accent-color: #4ec9b0;
+            --accent-hover: #3aa08a; --border-color: #3c3c3c;
+        }
+
+        .bg-primary { background-color: var(--bg-primary); }
+        .bg-secondary { background-color: var(--bg-secondary); }
+        .bg-tertiary { background-color: var(--bg-tertiary); }
+        .text-primary { color: var(--text-primary); }
+        .text-secondary { color: var(--text-secondary); }
+        .text-accent { color: var(--accent-color); }
+        .border-custom { border-color: var(--border-color); }
+        .fill-accent { fill: var(--accent-color); }
+        .hover\:bg-accent:hover { background-color: var(--accent-hover); }
+        .hover\:text-accent:hover { color: var(--accent-color); }
+        
+        .nav-link.active { color: var(--accent-color); font-weight: 700; }
+        #main-header { transition: top 0.3s ease-in-out; }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .progress-bar {
+            background-color: var(--bg-tertiary);
+            transition: width 1s ease-in-out;
+        }
+        .progress-bar > div {
+            background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body class="bg-primary text-primary">
+
+    <!-- =================================
+    HEADER / NAVIGATION
+    ================================== -->
+    <header id="main-header" class="bg-secondary/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-accent">MH</a>
+            <nav class="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+                <a href="index.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="خانه" data-lang-en="Home">خانه</a>
+                <a href="about.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="درباره من" data-lang-en="About">درباره من</a>
+                <a href="portfolio.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="نمونه‌کارها" data-lang-en="Portfolio">نمونه‌کارها</a>
+                <a href="resume.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="رزومه" data-lang-en="Resume">Resume</a>
+                <a href="contact.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="تماس" data-lang-en="Contact">تماس</a>
+            </nav>
+            <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                <button id="theme-switcher" class="p-2 rounded-full hover:bg-tertiary transition-colors duration-200">
+                    <svg id="theme-icon" class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+                <button id="lang-switcher" class="text-sm font-semibold p-2 rounded-md hover:bg-tertiary transition-colors duration-200 w-12 text-center">FA</button>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-tertiary transition-colors duration-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary">
+            <nav class="flex flex-col items-center py-4 space-y-4">
+                <a href="index.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="خانه" data-lang-en="Home">خانه</a>
+                <a href="about.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="درباره من" data-lang-en="About">درباره من</a>
+                <a href="portfolio.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="نمونه‌کارها" data-lang-en="Portfolio">نمونه‌کارها</a>
+                <a href="resume.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="رزومه" data-lang-en="Resume">Resume</a>
+                <a href="contact.html" class="nav-link hover:text-accent transition-colors duration-200" data-lang-fa="تماس" data-lang-en="Contact">تماس</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-20">
+        <!-- =================================
+        ABOUT SECTION
+        ================================== -->
+        <section id="about" class="py-10 md:py-16">
+            <div class="container mx-auto px-6">
+                <div class="fade-in-section text-center">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4" data-lang-fa="درباره من" data-lang-en="About Me">درباره من</h1>
+                    <div class="w-20 h-1 bg-accent mx-auto mb-12"></div>
+                </div>
+                
+                <div class="fade-in-section max-w-4xl mx-auto text-center text-secondary leading-relaxed text-lg">
+                    <p data-lang-fa="من محمدرضا حسن‌زاده، دانشجوی مهندسی کامپیوتر در دانشگاه صنعتی امیرکبیر هستم. فردی کنجکاو و مشتاق که همواره از رویارویی با چالش‌های جدید و یادگیری لذت می‌برد. عمده علاقه و تمرکز من بر حوزه‌های هوش مصنوعی، شبکه‌های کامپیوتری و رباتیک است و در حال حاضر مشغول یادگیری عمیق‌تر مباحثی چون تحلیل داده و پردازش زبان طبیعی (NLP) هستم. من به پیشرفت مستمر باور دارم و از هر فرصتی برای گسترش دانش و مهارت‌هایم استفاده می‌کنم." data-lang-en="I am Mohammadreza Hassanzadeh, a Computer Engineering student at Amirkabir University of Technology. As a curious and enthusiastic individual, I thrive on facing new challenges and enjoy the process of learning. My primary interests and focus lie in the fields of Artificial Intelligence, Computer Networks, and Robotics. I am currently deepening my knowledge in topics such as Data Analysis and Natural Language Processing (NLP). I believe in continuous growth and seize every opportunity to expand my knowledge and skills.">
+                        من محمدرضا حسن‌زاده، دانشجوی مهندسی کامپیوتر در دانشگاه صنعتی امیرکبیر هستم. فردی کنجکاو و مشتاق که همواره از رویارویی با چالش‌های جدید و یادگیری لذت می‌برد. عمده علاقه و تمرکز من بر حوزه‌های هوش مصنوعی، شبکه‌های کامپیوتری و رباتیک است و در حال حاضر مشغول یادگیری عمیق‌تر مباحثی چون تحلیل داده و پردازش زبان طبیعی (NLP) هستم. من به پیشرفت مستمر باور دارم و از هر فرصتی برای گسترش دانش و مهارت‌هایم استفاده می‌کنم.
+                    </p>
+                </div>
+
+                <div class="fade-in-section mt-16 max-w-5xl mx-auto">
+                    <h2 class="text-2xl md:text-3xl font-bold text-center mb-12" data-lang-fa="مهارت‌های فنی" data-lang-en="Technical Skills">مهارت‌های فنی</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                        <!-- Skill Progress Bars -->
+                        <div class="space-y-6">
+                            <!-- C -->
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-primary">C</span>
+                                    <span class="text-sm font-medium text-secondary">70%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5 progress-bar">
+                                    <div class="h-2.5 rounded-full" style="width: 0%" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <!-- Python -->
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-primary">Python</span>
+                                    <span class="text-sm font-medium text-secondary">70%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5 progress-bar">
+                                    <div class="h-2.5 rounded-full" style="width: 0%" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <!-- Java -->
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-primary">Java</span>
+                                    <span class="text-sm font-medium text-secondary">60%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5 progress-bar">
+                                    <div class="h-2.5 rounded-full" style="width: 0%" data-width="60%"></div>
+                                </div>
+                            </div>
+                             <!-- C++ -->
+                             <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-primary">C++</span>
+                                    <span class="text-sm font-medium text-secondary">20%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5 progress-bar">
+                                    <div class="h-2.5 rounded-full" style="width: 0%" data-width="20%"></div>
+                                </div>
+                            </div>
+                            <!-- C# -->
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-primary">C#</span>
+                                    <span class="text-sm font-medium text-secondary">30%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5 progress-bar">
+                                    <div class="h-2.5 rounded-full" style="width: 0%" data-width="30%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Skills -->
+                        <div class="space-y-6">
+                           <div class="bg-secondary p-6 rounded-lg shadow-lg h-full">
+                                <h3 class="text-xl font-semibold text-accent mb-4" data-lang-fa="سایر حوزه‌های دانش و ابزارها" data-lang-en="Other Knowledge & Tools">سایر حوزه‌های دانش و ابزارها</h3>
+                                <ul class="space-y-3 text-secondary list-disc list-inside rtl:list-outside rtl:pr-4">
+                                    <li data-lang-fa="هوش مصنوعی و تحلیل داده" data-lang-en="Artificial Intelligence & Data Analysis">هوش مصنوعی و تحلیل داده</li>
+                                    <li data-lang-fa="پردازش زبان طبیعی (NLP) و رباتیک" data-lang-en="Natural Language Processing (NLP) & Robotics">پردازش زبان طبیعی (NLP) و رباتیک</li>
+                                    <li data-lang-fa="هک و امنیت" data-lang-en="Hacking & Security">هک و امنیت</li>
+                                    <li data-lang-fa="Git, GitHub" data-lang-en="Git, GitHub">Git, GitHub</li>
+                                    <li data-lang-fa="Photoshop, CATIA" data-lang-en="Photoshop, CATIA">Photoshop, CATIA</li>
+                                    <li data-lang-fa="Microsoft Office Suite" data-lang-en="Microsoft Office Suite">Microsoft Office Suite</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary border-t border-custom py-6">
+        <div class="container mx-auto px-6 text-center text-secondary text-sm">
+            <p id="footer-text" data-lang-fa="© 1403 محمدرضا حسن‌زاده کردآبادی. تمامی حقوق محفوظ است." data-lang-en="© 2024 Mohammadreza Hassanzadeh. All Rights Reserved.">© 1403 محمدرضا حسن‌زاده کردآبادی. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- ELEMENTS ---
+        const body = document.body;
+        const html = document.documentElement;
+        const header = document.getElementById('main-header');
+        const themeSwitcher = document.getElementById('theme-switcher');
+        const themeIcon = document.getElementById('theme-icon');
+        const langSwitcher = document.getElementById('lang-switcher');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const langElements = document.querySelectorAll('[data-lang-fa]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const progressBars = document.querySelectorAll('.progress-bar > div');
+
+        // --- THEMES ---
+        const themes = ['theme-dark', 'theme-light', 'theme-code'];
+        const themeIcons = {
+            'theme-dark': `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>`,
+            'theme-light': `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>`,
+            'theme-code': `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>`
+        };
+        let currentThemeIndex = 0;
+
+        const applyTheme = (themeName) => {
+            body.className = 'bg-primary text-primary';
+            body.classList.add(themeName);
+            themeIcon.innerHTML = themeIcons[themeName];
+            localStorage.setItem('theme', themeName);
+            currentThemeIndex = themes.indexOf(themeName);
+        };
+
+        const savedTheme = localStorage.getItem('theme') || 'theme-dark';
+        applyTheme(savedTheme);
+
+        themeSwitcher.addEventListener('click', () => {
+            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+            applyTheme(themes[currentThemeIndex]);
+        });
+
+        // --- LANGUAGE ---
+        const updateLanguage = (lang) => {
+            html.lang = lang;
+            html.dir = lang === 'fa' ? 'rtl' : 'ltr';
+            langSwitcher.textContent = lang === 'fa' ? 'EN' : 'FA';
+            langElements.forEach(el => {
+                const text = el.getAttribute(`data-lang-${lang}`);
+                if (text) el.innerHTML = text;
+            });
+            localStorage.setItem('language', lang);
+        };
+
+        const savedLang = localStorage.getItem('language') || 'fa';
+        updateLanguage(savedLang);
+
+        langSwitcher.addEventListener('click', () => {
+            const newLang = html.lang === 'fa' ? 'en' : 'fa';
+            updateLanguage(newLang);
+        });
+        
+        // --- SMART HEADER ---
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            if (lastScrollY < window.scrollY && window.scrollY > 100) {
+                header.style.top = `-${header.offsetHeight}px`;
+            } else {
+                header.style.top = '0';
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        // --- MOBILE MENU ---
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') mobileMenu.classList.add('hidden');
+        });
+
+        // --- INTERSECTION OBSERVER FOR ANIMATIONS ---
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Animate progress bars
+                    if (entry.target.matches('.progress-bar > div')) {
+                        const width = entry.target.getAttribute('data-width');
+                        entry.target.style.width = width;
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+        
+        if ("IntersectionObserver" in window) {
+            const options = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const observer = new IntersectionObserver(observerCallback, options);
+            
+            const faders = document.querySelectorAll('.fade-in-section');
+            faders.forEach(fader => observer.observe(fader));
+            
+            progressBars.forEach(bar => observer.observe(bar));
+        } else {
+            // Fallback for older browsers
+            document.querySelectorAll('.fade-in-section').forEach(f => f.classList.add('is-visible'));
+            progressBars.forEach(bar => bar.style.width = bar.getAttribute('data-width'));
+        }
+
+        // --- ACTIVE NAV LINK ---
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        navLinks.forEach(link => {
+            if (link.getAttribute('href').split('/').pop() === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
