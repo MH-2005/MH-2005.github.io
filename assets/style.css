@@ -34,5 +34,38 @@ html[lang="en"] body { font-family: var(--font-en); }
 .hover\:text-accent:hover { color: var(--accent-color); }
 .nav-link.active { color: var(--accent-color); font-weight: 700; }
 #main-header { transition: top 0.3s ease-in-out; }
-.fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-.fade-in-section.is-visible { opacity: 1; transform: translateY(0); } 
+/* Timeline modern styles */
+.relative.ml-4:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  width: 4px;
+  background: var(--color-accent, #4ec9b0);
+  opacity: 0.25;
+  z-index: 0;
+}
+[dir="rtl"] .relative.ml-4:before {
+  left: auto;
+  right: 1rem;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+.progress-bar {
+  background-color: var(--color-tertiary, #e5e7eb);
+  overflow: hidden;
+  position: relative;
+}
+.progress-bar > div {
+  background: linear-gradient(90deg, var(--color-accent, #4ec9b0) 0%, var(--color-accent2, #3b82f6) 100%);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+} 

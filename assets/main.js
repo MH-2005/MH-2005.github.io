@@ -128,4 +128,27 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         }
     });
+
+    // Animate progress bars on page load
+    document.querySelectorAll('.progress-bar > div').forEach(function (bar) {
+        var width = bar.getAttribute('data-width');
+        if (width) {
+            setTimeout(function () {
+                bar.style.width = width;
+            }, 300);
+        }
+    });
 }); 
+
+// Fade-in animation for timeline and sections
+function handleFadeInSections() {
+  var fadeEls = document.querySelectorAll('.fade-in-section');
+  fadeEls.forEach(function(el) {
+    var rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60) {
+      el.classList.add('is-visible');
+    }
+  });
+}
+window.addEventListener('scroll', handleFadeInSections);
+document.addEventListener('DOMContentLoaded', handleFadeInSections); 
